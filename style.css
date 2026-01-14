@@ -12,7 +12,7 @@ body {
   overflow: hidden;
 }
 
-/* ===== MENU ===== */
+/* ===== MENU / WIN ===== */
 #menu, #win {
   position: absolute;
   inset: 0;
@@ -23,6 +23,7 @@ body {
   justify-content: center;
   gap: 16px;
   z-index: 10;
+  text-align: center;
 }
 
 .logo {
@@ -31,12 +32,12 @@ body {
 
 button {
   padding: 14px 20px;
-  border-radius: 12px;
+  border-radius: 14px;
   border: none;
   background: #1f2a44;
   color: #fff;
   font-size: 16px;
-  width: 220px;
+  width: 240px;
   touch-action: manipulation;
 }
 
@@ -55,30 +56,39 @@ button:active {
   position: absolute;
   inset: 0;
   background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Campo ajustado para RETRATO */
 canvas {
   width: 100%;
+  max-width: 420px;
   height: 100%;
   display: block;
+  background: #000;
 }
 
+/* ===== TOUCH AREAS ===== */
 .touch {
   position: absolute;
-  top: 0;
   width: 50%;
   height: 100%;
+  top: 0;
 }
 
 .touch.left { left: 0; }
 .touch.right { right: 0; }
 
+/* ===== BOTÃO MENU ===== */
 .menuBtn {
   position: absolute;
   top: 12px;
   right: 12px;
   width: auto;
   padding: 8px 14px;
+  z-index: 5;
 }
 
 /* ===== UTIL ===== */
