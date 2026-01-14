@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Telejogo Pong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+  <meta name="theme-color" content="#0f1115">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MENU -->
+<div id="menu">
+  <img src="logo.png" class="logo">
+  <h1>Telejogo Pong</h1>
+
+  <button id="btn2p">📱 2 Jogadores (toque)</button>
+
+  <div class="ia-box">
+    <p>🤖 Jogador vs IA</p>
+    <button data-diff="easy">Fácil</button>
+    <button data-diff="medium">Médio</button>
+    <button data-diff="hard">Difícil</button>
+  </div>
+</div>
+
+<!-- TELA DE VITÓRIA -->
+<div id="win" class="hidden">
+  <h2 id="winnerText"></h2>
+  <button id="playAgain">Voltar ao Menu</button>
+</div>
+
+<!-- JOGO (fica FORA quando menu aparece) -->
+<div id="gameContainer" class="hidden">
+  <canvas id="game"></canvas>
+  <div class="touch left"></div>
+  <div class="touch right"></div>
+
+  <button id="resetBtn" class="menuBtn">Menu</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

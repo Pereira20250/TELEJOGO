@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f1115;
+  color: #fff;
+  font-family: system-ui, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ===== MENU ===== */
+#menu, #win {
+  position: absolute;
+  inset: 0;
+  background: #0f1115;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 10;
+}
+
+.logo {
+  width: 120px;
+}
+
+button {
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: none;
+  background: #1f2a44;
+  color: #fff;
+  font-size: 16px;
+  width: 220px;
+  touch-action: manipulation;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.ia-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ===== GAME ===== */
+#gameContainer {
+  position: absolute;
+  inset: 0;
+  background: #000;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.touch {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.touch.left { left: 0; }
+.touch.right { right: 0; }
+
+.menuBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: auto;
+  padding: 8px 14px;
+}
+
+/* ===== UTIL ===== */
+.hidden {
+  display: none !important;
+}
